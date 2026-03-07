@@ -1,0 +1,23 @@
+{
+  "name": "construction-estimating-plugin",
+  "version": "1.0.0",
+  "description": "A fully functional construction estimating plugin for Claude Code with materials, labor, equipment, markup, and reporting capabilities",
+  "main": "src/engine/estimate-engine.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "estimate": "node src/cli.js",
+    "validate": "node src/utils/validator.js",
+    "demo": "node examples/demo-estimate.js"
+  },
+  "keywords": [
+    "construction",
+    "estimating",
+    "cost-estimation",
+    "materials",
+    "labor",
+    "markup",
+    "claude-plugin"
+  ],
+  "license": "MIT"
+}

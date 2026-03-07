@@ -1,0 +1,148 @@
+/**
+ * Template: Residential Remodel Estimate
+ * Pre-configured template for residential remodeling projects.
+ */
+
+export const RESIDENTIAL_REMODEL_TEMPLATE = {
+  name: 'Residential Remodel',
+  description: 'Template for home remodeling projects (kitchen, bath, basement, etc.)',
+  config: {
+    taxRate: 0.0825,
+    overheadRate: 0.10,
+    profitRate: 0.10,
+    contingencyRate: 0.10,
+    bondRate: 0,
+    laborBurdenRate: 0.35,
+    markupMethod: 'cost-plus',
+    wasteFactor: 0.05,
+  },
+  categories: [
+    { name: 'Demolition', csiCode: '02', description: 'Demo and removal of existing work' },
+    { name: 'Structural', csiCode: '05', description: 'Structural modifications' },
+    { name: 'Framing', csiCode: '06', description: 'Wall framing, headers, blocking' },
+    { name: 'Electrical', csiCode: '26', description: 'Electrical rough and finish' },
+    { name: 'Plumbing', csiCode: '22', description: 'Plumbing rough and finish' },
+    { name: 'HVAC', csiCode: '23', description: 'HVAC modifications' },
+    { name: 'Insulation', csiCode: '07', description: 'Insulation' },
+    { name: 'Drywall', csiCode: '09', description: 'Drywall hang, tape, and finish' },
+    { name: 'Flooring', csiCode: '09', description: 'Flooring materials and installation' },
+    { name: 'Tile', csiCode: '09', description: 'Tile work' },
+    { name: 'Cabinets & Countertops', csiCode: '12', description: 'Cabinet and countertop installation' },
+    { name: 'Paint', csiCode: '09', description: 'Painting and wall finishes' },
+    { name: 'Trim & Doors', csiCode: '06', description: 'Trim, doors, and millwork' },
+    { name: 'Fixtures & Hardware', csiCode: '10', description: 'Fixtures, accessories, hardware' },
+    { name: 'Cleanup', csiCode: '01', description: 'Final cleanup and debris removal' },
+  ],
+  exclusions: [
+    'Permits and permit fees (owner to obtain)',
+    'Architectural or engineering services',
+    'Hazardous material testing or abatement (asbestos, lead)',
+    'Structural issues discovered during construction',
+    'Furniture moving or storage',
+    'Landscaping or exterior work',
+    'Appliances (unless specifically noted)',
+  ],
+  inclusions: [
+    'All labor and materials as specified',
+    'Daily cleanup of work area',
+    'Final cleanup upon project completion',
+    'Protection of existing floors and surfaces',
+    'Dumpster for debris removal',
+    'Standard warranties on workmanship',
+  ],
+};
+
+export const KITCHEN_REMODEL_TEMPLATE = {
+  name: 'Kitchen Remodel',
+  description: 'Template for full kitchen remodel projects',
+  config: {
+    taxRate: 0.0825,
+    overheadRate: 0.12,
+    profitRate: 0.10,
+    contingencyRate: 0.10,
+    bondRate: 0,
+    laborBurdenRate: 0.35,
+    markupMethod: 'cost-plus',
+    wasteFactor: 0.05,
+  },
+  categories: [
+    { name: 'Demolition', csiCode: '02', description: 'Remove existing cabinets, countertops, flooring, backsplash' },
+    { name: 'Structural', csiCode: '05', description: 'Wall removal, headers, structural modifications' },
+    { name: 'Rough Electrical', csiCode: '26', description: 'New circuits, outlets, lighting rough-in' },
+    { name: 'Rough Plumbing', csiCode: '22', description: 'Supply and drain relocations' },
+    { name: 'HVAC', csiCode: '23', description: 'Ductwork modifications, range hood venting' },
+    { name: 'Drywall & Patching', csiCode: '09', description: 'New drywall and patching' },
+    { name: 'Cabinets', csiCode: '12', description: 'Cabinet supply and installation' },
+    { name: 'Countertops', csiCode: '12', description: 'Countertop fabrication and installation' },
+    { name: 'Backsplash', csiCode: '09', description: 'Backsplash tile supply and installation' },
+    { name: 'Flooring', csiCode: '09', description: 'Kitchen flooring' },
+    { name: 'Paint', csiCode: '09', description: 'Priming and painting' },
+    { name: 'Finish Electrical', csiCode: '26', description: 'Devices, fixtures, under-cabinet lighting' },
+    { name: 'Finish Plumbing', csiCode: '22', description: 'Sink, faucet, disposal, dishwasher hookup' },
+    { name: 'Hardware & Accessories', csiCode: '10', description: 'Cabinet hardware, accessories' },
+    { name: 'Cleanup', csiCode: '01', description: 'Final cleanup' },
+  ],
+  exclusions: [
+    'Appliances (unless specifically listed)',
+    'Permits and inspection fees',
+    'Asbestos or lead abatement',
+    'Structural engineering',
+    'Gas line work (requires licensed gas fitter)',
+  ],
+  inclusions: [
+    'All labor and materials as listed',
+    'Protection of adjacent flooring',
+    'Daily cleanup',
+    'Dumpster rental',
+    'Final cleaning of installed items',
+  ],
+};
+
+export const BATHROOM_REMODEL_TEMPLATE = {
+  name: 'Bathroom Remodel',
+  description: 'Template for bathroom remodel projects',
+  config: {
+    taxRate: 0.0825,
+    overheadRate: 0.12,
+    profitRate: 0.10,
+    contingencyRate: 0.10,
+    bondRate: 0,
+    laborBurdenRate: 0.35,
+    markupMethod: 'cost-plus',
+    wasteFactor: 0.05,
+  },
+  categories: [
+    { name: 'Demolition', csiCode: '02', description: 'Remove existing fixtures, tile, vanity' },
+    { name: 'Rough Plumbing', csiCode: '22', description: 'Supply and drain work' },
+    { name: 'Rough Electrical', csiCode: '26', description: 'Circuits, GFCI, fan, lighting rough-in' },
+    { name: 'Waterproofing', csiCode: '07', description: 'Shower pan, membrane, cement board' },
+    { name: 'Tile', csiCode: '09', description: 'Shower tile, floor tile' },
+    { name: 'Drywall', csiCode: '09', description: 'Drywall and moisture-resistant board' },
+    { name: 'Vanity & Countertop', csiCode: '12', description: 'Vanity and countertop installation' },
+    { name: 'Fixtures', csiCode: '22', description: 'Toilet, tub/shower, faucets' },
+    { name: 'Paint', csiCode: '09', description: 'Priming and painting' },
+    { name: 'Accessories', csiCode: '10', description: 'Towel bars, mirror, toilet paper holder' },
+    { name: 'Finish Electrical', csiCode: '26', description: 'Light fixtures, GFCI outlets, fan' },
+    { name: 'Flooring', csiCode: '09', description: 'Bathroom flooring' },
+    { name: 'Trim & Door', csiCode: '06', description: 'Baseboard, door trim' },
+    { name: 'Cleanup', csiCode: '01', description: 'Final cleanup' },
+  ],
+  exclusions: [
+    'Permits and inspections',
+    'Mold remediation',
+    'Structural repairs',
+    'Moving/relocating drain or vent stacks',
+  ],
+  inclusions: [
+    'All labor and materials as listed',
+    'Waterproofing of shower/tub area',
+    'Debris removal and dumpster',
+    'Daily and final cleanup',
+  ],
+};
+
+export default {
+  RESIDENTIAL_REMODEL_TEMPLATE,
+  KITCHEN_REMODEL_TEMPLATE,
+  BATHROOM_REMODEL_TEMPLATE,
+};
