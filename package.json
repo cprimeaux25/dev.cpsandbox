@@ -9,7 +9,8 @@
     "estimate": "node src/cli.js",
     "validate": "node src/utils/validator.js",
     "demo": "node examples/demo-estimate.js",
-    "sandbox-demo": "node examples/developer-sandbox-demo.js"
+    "sandbox-demo": "node examples/developer-sandbox-demo.js",
+    "sandbox-ui": "python3 -m http.server 4173 -d apps/prime-sandbox"
   },
   "keywords": [
     "construction",
