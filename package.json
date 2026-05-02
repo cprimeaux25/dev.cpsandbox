@@ -8,7 +8,8 @@
     "test": "node --experimental-vm-modules node_modules/.bin/jest",
     "estimate": "node src/cli.js",
     "validate": "node src/utils/validator.js",
-    "demo": "node examples/demo-estimate.js"
+    "demo": "node examples/demo-estimate.js",
+    "sandbox-demo": "node examples/developer-sandbox-demo.js"
   },
   "keywords": [
     "construction",
